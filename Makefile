@@ -7,7 +7,7 @@ lint:
 	pylint --disable=R,C,W1203,W1202 main.py mylib/*.py
 	flake8 --ignore=E501 main.py mylib/*.py
 test:
-	pytest -vv --cov=main test_logic.py
+	pytest -vv --cov=mylib test_logic.py
 build:
 	#build container
 deploy:
