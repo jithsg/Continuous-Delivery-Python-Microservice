@@ -9,7 +9,9 @@ lint:
 test:
 	pytest -vv --cov=mylib test_*.py
 build:
-	#build container
+	docker build -t my-fastapi-app:latest .
+run:
+	docker run -d --name my-fastapi-app -p 8080:8080 my-fastapi-app:latest
 deploy:
    #deploy
 all: install format lint test build deploy
