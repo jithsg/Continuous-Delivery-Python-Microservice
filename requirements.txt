@@ -1,0 +1,6 @@
+wikipedia
+pylint
+pytest
+pytest-cov
+fire
+black
