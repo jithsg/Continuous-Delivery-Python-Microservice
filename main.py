@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-import uvicorn
 from mylib.logic import wiki as wiki_logic
 from mylib.logic import search as search_logic
 
