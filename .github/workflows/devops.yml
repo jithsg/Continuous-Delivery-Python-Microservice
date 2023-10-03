@@ -40,6 +40,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy
-        run: |
-          echo "Deploying..."
-          make deploy
+        run: make deploy
