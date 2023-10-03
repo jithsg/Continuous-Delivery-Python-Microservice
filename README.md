@@ -1,4 +1,5 @@
 # Continuous-Delivery-Python-Microservice
+[![Python Application Test with Github Actions](https://github.com/jithsg/Continuous-Delivery-Python-Microservice/actions/workflows/devops.yml/badge.svg)](https://github.com/jithsg/Continuous-Delivery-Python-Microservice/actions/workflows/devops.yml)
 FastAPI Wikipedia API
 
 A simple FastAPI application that provides endpoints to fetch summaries and search results from Wikipedia.
