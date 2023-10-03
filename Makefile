@@ -13,5 +13,10 @@ build:
 run:
 	docker run -d --name my-fastapi-app -p 8080:8080 my-fastapi-app:latest
 deploy:
-   #deploy
+	#deploy to AWS ECR
+	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 185183796631.dkr.ecr.us-east-1.amazonaws.com
+	docker build -t fastapi-wiki .
+	docker tag fastapi-wiki:latest 185183796631.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
+	docker push 185183796631.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
+
 all: install format lint test build deploy
